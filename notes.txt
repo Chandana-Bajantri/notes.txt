@@ -1,0 +1,29 @@
+# Create project and open it
+
+mkdir git-demo
+cd git-demo
+code .
+
+# Initialize repo
+
+git init
+
+# Create and commit file
+
+echo "This is my first Git project." > notes.txt
+git add notes.txt
+git commit -m "Add initial notes.txt file"
+
+# Connect to GitHub and push
+
+git remote add origin 
+git branch -M main
+git push -u origin main
+
+# Update, commit, and push again
+
+echo "Added more text to notes." >> notes.txt
+git add notes.txt
+git commit -m "Update notes.txt with additional text"
+git push
+
